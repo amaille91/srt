@@ -3,13 +3,20 @@
 
 . srt-usage
 . srt-publish
+. srt-install
 
 case $1 in
 
         publish)
                 echo "Publishing sharad server"
                 shift
-                publish $@
+                srt-publish $@
+                ;;
+
+        install)
+                echo "Installing sharad server"
+                shift
+                srt-install $@
                 ;;
 
         *)

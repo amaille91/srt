@@ -1,6 +1,7 @@
 #!/bin/bash
+# srt-publish.sh
 
-function publish () {
+srt-publish() {
     if [[ ! $1 == "--input" ]]; then
             echo "--input is necessary for sbr to publish it" >&2
             exit 1
@@ -10,7 +11,7 @@ function publish () {
             echo "--input needs an argument" >&2
             exit 1
     fi
-    repo_dir=$HOME/.local/share/srt/
+    repo_dir=$HOME/.local/share/srt/sharad-backend/
     artifact=$1
     mkdir -p $repo_dir
     cp $artifact $repo_dir

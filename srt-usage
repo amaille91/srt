@@ -1,7 +1,7 @@
 #!/bin/bash
 # srt-usage.sh
 
-function usage {
+srt-usage() {
     cat <<EOF
 USAGE: srt [COMMAND] [OPTIONS]
 
@@ -10,8 +10,12 @@ with the rest of the sharad ecosystem (e.g. 'sharad.sh', the wrapper around the 
 
 Options:
   -h    Displays this usage
+
 Commands:
   publish    Builds the sharad server then Publishes it into the Sharad Repository
+  install    Installs the wanted version of sharad-backend into the desired directory.
+             Example: srt install --to .
+             installs the latest version of the sharad backend into the current directory
 EOF
 }
 
