@@ -1,0 +1,20 @@
+#!/bin/bash
+# srt.sh: Sharad Build Tool
+
+. srt-usage
+. srt-publish
+
+case $1 in
+
+        publish)
+                echo "Publishing sharad server"
+                shift
+                publish $@
+                ;;
+
+        *)
+                echo "Unknown command $1" >&2
+                usage
+                exit 1
+                ;;
+esac
