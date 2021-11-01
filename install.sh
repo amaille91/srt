@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp ./srt ./srt-usage /usr/local/bin/
+cp ./srt* /usr/local/bin/
 

@@ -3,7 +3,7 @@
 
 srt-install() {
     if [[ ! $1 == "--to" ]]; then
-            echo "--to is necessary for sbr to install sharad-backend" >&2
+            echo "--to is necessary for srt to install sharad-backend" >&2
             exit 1
     fi
     shift

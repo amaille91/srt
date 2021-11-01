@@ -13,6 +13,7 @@ Options:
 
 Commands:
   publish    Builds the sharad server then Publishes it into the Sharad Repository
+
   install    Installs the wanted version of sharad-backend into the desired directory.
              Example: srt install --to .
              installs the latest version of the sharad backend into the current directory

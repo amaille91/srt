@@ -21,7 +21,7 @@ case $1 in
 
         *)
                 echo "Unknown command $1" >&2
-                usage
+                srt-usage
                 exit 1
                 ;;
 esac
